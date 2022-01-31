@@ -82,7 +82,7 @@ public class DrawingClient extends JFrame {
     }
 
     public static void main(String[] args) {
-        DrawingClient drawingClient = new DrawingClient(1920, 1080);
+        new DrawingClient(1920, 1080);
     }
 
 
