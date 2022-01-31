@@ -16,7 +16,7 @@ public class FacadePatternTest {
 
         Connection conn1 = OracleHelper.getOracleDBConnection();
         OracleHelper oracleHelper = new OracleHelper();
-        oracleHelper.generateOraclePDFReport(tableName, conn);
+        oracleHelper.generateOraclePDFReport(tableName, conn1);
 
         // generating with Facade
         HelperFacade.generateReport(HelperFacade.DBTypes.MYSQL, ReportTypes.HTML, tableName);
