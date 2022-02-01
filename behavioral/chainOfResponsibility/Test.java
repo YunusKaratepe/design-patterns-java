@@ -12,8 +12,9 @@ public class Test {
             System.out.println("Enter the amount of dispanse: ");
             try {
                 int amount = 0;
-                Scanner input = new Scanner(System.in);
-                amount = input.nextInt();
+                try (Scanner input = new Scanner(System.in)) {
+                    amount = input.nextInt();
+                }
                 if (amount % 10 != 0) {
                     System.out.println("Amount should be in multiple of 10s.");
                 }else {
