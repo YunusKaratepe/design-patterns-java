@@ -1,4 +1,4 @@
-package behavioral.interpret;
+package behavioral.interpreter;
 
 public class IntToBinaryExpression implements Expression {
 

@@ -1,4 +1,4 @@
-package behavioral.interpret;
+package behavioral.interpreter;
 
 public interface Expression {
     
